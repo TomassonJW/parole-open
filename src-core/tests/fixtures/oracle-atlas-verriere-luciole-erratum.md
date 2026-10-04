@@ -1,0 +1,5 @@
+# Erratum de l'oracle initial (source vérifiée après l'essai)
+
+L'oracle `oracle-avant-inference.json` reste inchangé pour que la preuve préparée avant inférence soit consultable. Sa tâche `légendes` est classée « active » et dit que Simon « prépare les légendes ». C'est faux au dernier état de la transcription : à l'intervention 32, Simon dit « J'ai préparé les légendes, mais je n'ai reçu aucune autorisation. » La **préparation est achevée** ; la relecture éventuelle et surtout la **vérification des droits** restent distinctes et ouvertes.
+
+Cette correction provient uniquement de la transcription fictive, pas des réponses des modèles. Toute notation de la tâche `légendes` doit employer « achevée » et ne pas pénaliser un modèle qui la considère faite. Le nombre de 61 références reste identique, mais la citation de l'intervention 32 est élargie dans l'oracle corrigé pour établir que la préparation est achevée et que les droits restent ouverts. Les autres citations et toutes les autres entrées de l'oracle sont inchangées. Les mesures et fichiers de sortie ne sont pas réécrits par cet erratum.

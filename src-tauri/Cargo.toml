@@ -1,0 +1,27 @@
+[package]
+name = "parole-desktop"
+version = "0.1.0"
+description = "Transcription locale et privée"
+authors = ["Parole"]
+edition = "2021"
+license = "MIT"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+parole-core = { path = "../src-core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+ureq = "2"
+fs2 = "0.4"
+uuid = { version = "1", features = ["v4"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = "=0.2.189" # Déjà présent dans src-core et Cargo.lock ; openat/renameat ancrés.
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

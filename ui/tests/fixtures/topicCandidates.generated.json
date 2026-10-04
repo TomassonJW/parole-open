@@ -1,0 +1,316 @@
+{
+  "candidates": {
+    "links": [
+      {
+        "evidence": [
+          {
+            "byte_end": 29,
+            "byte_start": 23,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 6,
+            "byte_start": 0,
+            "citation": "Budget dans le dossier Nébuleuse.",
+            "end_ms": 3000,
+            "segment_index": 2,
+            "start_ms": 2000
+          },
+          {
+            "byte_end": 17,
+            "byte_start": 11,
+            "citation": "Projet AB, budget.",
+            "end_ms": 7000,
+            "segment_index": 6,
+            "start_ms": 6000
+          }
+        ],
+        "shared_term": "budget"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 41,
+            "byte_start": 35,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 28,
+            "byte_start": 22,
+            "citation": "😀 L’orchidée et café.",
+            "end_ms": 6000,
+            "segment_index": 5,
+            "start_ms": 5000
+          }
+        ],
+        "shared_term": "café"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 9,
+            "byte_start": 0,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 19,
+            "byte_start": 10,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 11,
+            "byte_start": 2,
+            "citation": "L'orchidée revient.",
+            "end_ms": 5000,
+            "segment_index": 4,
+            "start_ms": 4000
+          },
+          {
+            "byte_end": 18,
+            "byte_start": 9,
+            "citation": "😀 L’orchidée et café.",
+            "end_ms": 6000,
+            "segment_index": 5,
+            "start_ms": 5000
+          }
+        ],
+        "shared_term": "orchidée"
+      }
+    ],
+    "possible_folders": [
+      {
+        "evidence": [
+          {
+            "byte_end": 9,
+            "byte_start": 7,
+            "citation": "Projet AB.",
+            "end_ms": 1000,
+            "segment_index": 0,
+            "start_ms": 0
+          },
+          {
+            "byte_end": 9,
+            "byte_start": 7,
+            "citation": "Projet AB, budget.",
+            "end_ms": 7000,
+            "segment_index": 6,
+            "start_ms": 6000
+          }
+        ],
+        "name": "AB"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 33,
+            "byte_start": 23,
+            "citation": "Budget dans le dossier Nébuleuse.",
+            "end_ms": 3000,
+            "segment_index": 2,
+            "start_ms": 2000
+          }
+        ],
+        "name": "Nébuleuse"
+      }
+    ],
+    "schema_version": 1,
+    "without_suggestion": [
+      3
+    ],
+    "words": [
+      {
+        "evidence": [
+          {
+            "byte_end": 29,
+            "byte_start": 23,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 6,
+            "byte_start": 0,
+            "citation": "Budget dans le dossier Nébuleuse.",
+            "end_ms": 3000,
+            "segment_index": 2,
+            "start_ms": 2000
+          },
+          {
+            "byte_end": 17,
+            "byte_start": 11,
+            "citation": "Projet AB, budget.",
+            "end_ms": 7000,
+            "segment_index": 6,
+            "start_ms": 6000
+          }
+        ],
+        "lexical_weight": 3333,
+        "term": "budget"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 41,
+            "byte_start": 35,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 28,
+            "byte_start": 22,
+            "citation": "😀 L’orchidée et café.",
+            "end_ms": 6000,
+            "segment_index": 5,
+            "start_ms": 5000
+          }
+        ],
+        "lexical_weight": 5000,
+        "term": "café"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 33,
+            "byte_start": 23,
+            "citation": "Budget dans le dossier Nébuleuse.",
+            "end_ms": 3000,
+            "segment_index": 2,
+            "start_ms": 2000
+          }
+        ],
+        "lexical_weight": 10000,
+        "term": "nébuleuse"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 9,
+            "byte_start": 0,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 19,
+            "byte_start": 10,
+            "citation": "Orchidée orchidée et budget 😀 café.",
+            "end_ms": 2000,
+            "segment_index": 1,
+            "start_ms": 1000
+          },
+          {
+            "byte_end": 11,
+            "byte_start": 2,
+            "citation": "L'orchidée revient.",
+            "end_ms": 5000,
+            "segment_index": 4,
+            "start_ms": 4000
+          },
+          {
+            "byte_end": 18,
+            "byte_start": 9,
+            "citation": "😀 L’orchidée et café.",
+            "end_ms": 6000,
+            "segment_index": 5,
+            "start_ms": 5000
+          }
+        ],
+        "lexical_weight": 3333,
+        "term": "orchidée"
+      },
+      {
+        "evidence": [
+          {
+            "byte_end": 19,
+            "byte_start": 12,
+            "citation": "L'orchidée revient.",
+            "end_ms": 5000,
+            "segment_index": 4,
+            "start_ms": 4000
+          }
+        ],
+        "lexical_weight": 10000,
+        "term": "revient"
+      }
+    ]
+  },
+  "empty_candidates": {
+    "links": [],
+    "possible_folders": [],
+    "schema_version": 1,
+    "without_suggestion": [],
+    "words": []
+  },
+  "scope": "fiction-transport-v1",
+  "segments": [
+    {
+      "end_ms": 1000,
+      "speaker_id": "A",
+      "start_ms": 0,
+      "text": "Projet AB.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 2000,
+      "speaker_id": "B",
+      "start_ms": 1000,
+      "text": "Orchidée orchidée et budget 😀 café.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 3000,
+      "speaker_id": "A",
+      "start_ms": 2000,
+      "text": "Budget dans le dossier Nébuleuse.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 4000,
+      "speaker_id": "B",
+      "start_ms": 3000,
+      "text": "Bonjour et merci.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 5000,
+      "speaker_id": "A",
+      "start_ms": 4000,
+      "text": "L'orchidée revient.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 6000,
+      "speaker_id": "B",
+      "start_ms": 5000,
+      "text": "😀 L’orchidée et café.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 7000,
+      "speaker_id": "A",
+      "start_ms": 6000,
+      "text": "Projet AB, budget.",
+      "translated_text": null
+    }
+  ],
+  "speaker_names": {
+    "A": "Alice",
+    "B": "Benoît"
+  }
+}

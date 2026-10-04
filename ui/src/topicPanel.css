@@ -1,0 +1,6 @@
+.topic-panel__control { margin-block: 1rem; }
+.topic-panel__control > .button, .topic-panel__bar > .button { min-height: 44px; }
+.topic-panel { min-width: 0; margin-block-end: 1rem; padding: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+.topic-panel__bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-block-end: 1rem; }
+.topic-panel .topic-explorer { min-width: 0; }
+@media (max-width: 390px) { .topic-panel { padding: 1rem; } .topic-panel__bar > button { width: 100%; } }

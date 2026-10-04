@@ -1,0 +1,817 @@
+{
+  "schema_version": 1,
+  "title": "Classement local de sujets - cas français entièrement fictifs",
+  "synthetic": true,
+  "purpose": "Oracle préalable de rattachement à des thèmes, pas vérification des décisions, montants ou actions.",
+  "status": "pre_inference_frozen_candidate",
+  "topics": [
+    {
+      "id": "atlas-budget",
+      "label": "Budget du dossier Atlas",
+      "description": "Montants, devis, dépenses et financement du dossier Atlas."
+    },
+    {
+      "id": "atlas-calendrier",
+      "label": "Calendrier du dossier Atlas",
+      "description": "Dates, échéances, jalons et reports de livraison du dossier Atlas."
+    },
+    {
+      "id": "luciole-illustrations",
+      "label": "Illustrations du dossier Luciole",
+      "description": "Visuels, fichiers graphiques, légendes, crédits et droits des illustrations de Luciole."
+    },
+    {
+      "id": "luciole-budget",
+      "label": "Budget du dossier Luciole",
+      "description": "Montants, devis, dépenses et financement du dossier Luciole."
+    },
+    {
+      "id": "verriere-logistique",
+      "label": "Logistique du dossier Verrière",
+      "description": "Transport, livraison, montage et accès au site du dossier Verrière."
+    },
+    {
+      "id": "enregistrement",
+      "label": "Son et enregistrement de la réunion",
+      "description": "Microphone, volume sonore, parasites, coupures et enregistrement de cette réunion."
+    },
+    {
+      "id": "repas",
+      "label": "Repas et pause",
+      "description": "Menu, repas, restaurant, commande de nourriture et pause déjeuner."
+    }
+  ],
+  "cases": [
+    {
+      "id": "dev-explicit-atlas",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Pour Atlas, le nouveau devis porte l'enveloppe à quarante-huit mille euros.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Le passage nomme le dossier et un montant ; il ne demande pas de confirmer une décision."
+    },
+    {
+      "id": "dev-explicit-luciole",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le financement de Luciole reste à vingt mille euros, pas celui d'Atlas.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Atlas est une exclusion, pas un deuxième sujet budgétaire à attribuer."
+    },
+    {
+      "id": "dev-context-calendar",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "Restons sur le calendrier d'Atlas.",
+      "passage": "On décale finalement la livraison au mardi suivant.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-calendrier"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Le contexte désigne sans ambiguïté le dossier du pronom."
+    },
+    {
+      "id": "dev-illustrations",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Les illustrations de Luciole sont prêtes, mais nous attendons encore les crédits des photographes.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-illustrations"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "La préparation achevée et les crédits ouverts restent deux faits cités, pas une tâche inventée."
+    },
+    {
+      "id": "dev-logistics",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le camion de Verrière arrivera par la porte nord pour le montage.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "verriere-logistique"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Arrivée matérielle et accès au site."
+    },
+    {
+      "id": "dev-audio",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Mon microphone grésille ; je vais le couper quelques secondes.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "enregistrement"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Sujet de son, sans rattachement artificiel à un dossier."
+    },
+    {
+      "id": "dev-meal",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "On commande deux salades et une soupe pour la pause déjeuner.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "repas"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Sujet autonome même si bref."
+    },
+    {
+      "id": "dev-dual-atlas",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Pour Atlas, ajoutons deux mille euros au devis et avançons la livraison au douze juin.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "multiple",
+        "topic_ids": [
+          "atlas-budget",
+          "atlas-calendrier"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Deux dimensions effectivement présentes dans le passage central."
+    },
+    {
+      "id": "dev-ambiguous-owner",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "Nous venons d'évoquer Atlas et Luciole.",
+      "passage": "Son budget doit encore être confirmé.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": [
+          "atlas-budget",
+          "luciole-budget"
+        ]
+      },
+      "critical": true,
+      "rationale": "Le possessif ne désigne pas un dossier unique ; propositions possibles, pas attribution ferme."
+    },
+    {
+      "id": "dev-unlisted-project",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le budget du projet Orion est de six mille euros.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Le dossier Orion ne figure pas parmi les candidats : ne pas le verser dans Atlas ou Luciole."
+    },
+    {
+      "id": "dev-following-not-center",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Pour Atlas, le devis reste inchangé.",
+      "context_after": "Passons maintenant aux légendes de Luciole.",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Le sujet suivant sert le contexte mais ne doit pas remplacer celui du passage central."
+    },
+    {
+      "id": "dev-model-score-not-truth",
+      "split": "development",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Nous avions proposé de financer Atlas, puis retiré cette proposition.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Le thème reste budgétaire ; aucune décision active de financement ne doit être déduite."
+    },
+    {
+      "id": "test-cost-synonym",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Atlas : le fournisseur réclame un acompte avant de lancer la fabrication.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Le financement est évoqué sans le mot budget."
+    },
+    {
+      "id": "test-counter-proposal",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le plafond annoncé pour Luciole était trop haut ; le devis doit être revu à la baisse.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Correction de montant, pas changement de dossier."
+    },
+    {
+      "id": "test-calendar-reversal",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Pour Atlas, oubliez la date du dix juin : la cible demeure conditionnée à notre validation du quinze.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-calendrier"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Classement du calendrier sans promotion de la date conditionnelle en engagement ferme."
+    },
+    {
+      "id": "test-switch-to-luciole",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "Nous avons terminé le point financier d'Atlas.",
+      "passage": "L'enveloppe qui nous manque concerne maintenant Luciole.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Changement explicite de dossier ; le voisinage précédent ne doit pas dominer."
+    },
+    {
+      "id": "test-pronoun-clear-context",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "Pour les photographies de Luciole, les auteurs ne nous ont pas encore répondu.",
+      "passage": "Il faut obtenir leur autorisation avant d'envoyer les images à l'imprimeur.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-illustrations"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "La continuité du contexte identifie les droits des illustrations."
+    },
+    {
+      "id": "test-credit-word-trap",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Les crédits à ajouter sur les images de Luciole sont les noms des auteurs, pas une ligne de financement.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-illustrations"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Crédits signifie attribution des illustrations, pas budget."
+    },
+    {
+      "id": "test-delivery-place",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Verrière : les panneaux seront déposés dans la cour, puis montés par l'équipe sur place.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "verriere-logistique"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Livraison et montage matériels."
+    },
+    {
+      "id": "test-rare-sound",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "La dernière phrase a été coupée par le son ; pouvez-vous la répéter près du micro ?",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "enregistrement"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "À conserver même si cette interruption est le seul passage sur le son."
+    },
+    {
+      "id": "test-rare-meal",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Gardons une option végétarienne pour le déjeuner de l'équipe.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "repas"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Sujet bref, non supprimable pour faible fréquence."
+    },
+    {
+      "id": "test-two-budgets",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le devis d'Atlas augmente, celui de Luciole reste stable.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "multiple",
+        "topic_ids": [
+          "atlas-budget",
+          "luciole-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Les deux dossiers sont explicitement discutés ; ne pas fusionner leurs montants."
+    },
+    {
+      "id": "test-two-independent-subjects",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Les images de Luciole sont à livrer ; pour Verrière, le transporteur attend le code d'accès.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "multiple",
+        "topic_ids": [
+          "luciole-illustrations",
+          "verriere-logistique"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Deux sujets distincts dans le même passage, deux propositions légitimes."
+    },
+    {
+      "id": "test-ambiguous-pronoun",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "Atlas et Luciole ont chacun un devis en attente.",
+      "passage": "Il faudra revoir son montant avant vendredi.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": [
+          "atlas-budget",
+          "luciole-budget"
+        ]
+      },
+      "critical": true,
+      "rationale": "Le montant n’est pas attribuable de façon univoque à un seul dossier."
+    },
+    {
+      "id": "test-unknown-dossier",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Pour Brume, la dépense prévue ne dépassera pas neuf cents euros.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Dossier absent des choix ; ne pas forcer un budget connu."
+    },
+    {
+      "id": "test-off-topic",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le roman que je lis raconte une exploration de Mars.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": []
+      },
+      "critical": false,
+      "rationale": "Aucun candidat ne décrit ce sujet littéraire."
+    },
+    {
+      "id": "test-uninformative",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Oui, c'est bien cela.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Sans contexte, une approbation vague ne permet pas de choisir un thème."
+    },
+    {
+      "id": "test-question-not-decision",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Doit-on annuler l'acompte demandé pour Atlas ? Je pose la question, ce n'est pas décidé.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "atlas-budget"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Question budgétaire ; le classement ne confirme aucune annulation."
+    },
+    {
+      "id": "test-omitted-correct-candidate",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "",
+      "passage": "Le montage de Verrière nécessitera un accès par la rue latérale.",
+      "context_after": "",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations"
+      ],
+      "expected": {
+        "kind": "abstain",
+        "topic_ids": [],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Test du choix candidat manquant : ne pas affecter le passage à un sujet sans rapport."
+    },
+    {
+      "id": "test-context-about-other-project",
+      "split": "holdout",
+      "synthetic": true,
+      "context_before": "Le devis d'Atlas a été envoyé hier.",
+      "passage": "Les légendes des dessins de Luciole ont été relues.",
+      "context_after": "Nous reviendrons ensuite au financement de Luciole.",
+      "candidate_topic_ids": [
+        "atlas-budget",
+        "atlas-calendrier",
+        "luciole-illustrations",
+        "luciole-budget",
+        "verriere-logistique",
+        "enregistrement",
+        "repas"
+      ],
+      "expected": {
+        "kind": "single",
+        "topic_ids": [
+          "luciole-illustrations"
+        ],
+        "plausible_topic_ids": []
+      },
+      "critical": true,
+      "rationale": "Classer le passage central, pas les deux sujets du contexte voisin."
+    }
+  ]
+}

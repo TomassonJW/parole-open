@@ -1,0 +1,440 @@
+{
+  "job_id": "66666666-6666-4666-8666-666666666666",
+  "loaded_snapshot": {
+    "candidates": {
+      "links": [
+        {
+          "evidence": [
+            {
+              "byte_end": 24,
+              "byte_start": 11,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 46,
+              "byte_start": 33,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 50,
+              "byte_start": 37,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "aａｂｃｄ"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 67,
+              "byte_start": 50,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 28,
+              "byte_start": 11,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            },
+            {
+              "byte_end": 71,
+              "byte_start": 54,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "a𝐀𝐁𝐂𝐃"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 32,
+              "byte_start": 25,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 36,
+              "byte_start": 29,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "compare"
+        }
+      ],
+      "possible_folders": [
+        {
+          "evidence": [
+            {
+              "byte_end": 24,
+              "byte_start": 11,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "name": "AＡＢＣＤ"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 28,
+              "byte_start": 11,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "name": "A𝐀𝐁𝐂𝐃"
+        }
+      ],
+      "schema_version": 1,
+      "without_suggestion": [
+        2
+      ],
+      "words": [
+        {
+          "evidence": [
+            {
+              "byte_end": 24,
+              "byte_start": 11,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 46,
+              "byte_start": 33,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 50,
+              "byte_start": 37,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "aａｂｃｄ"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 67,
+              "byte_start": 50,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 28,
+              "byte_start": 11,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            },
+            {
+              "byte_end": 71,
+              "byte_start": 54,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "a𝐀𝐁𝐂𝐃"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 32,
+              "byte_start": 25,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 36,
+              "byte_start": 29,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "compare"
+        }
+      ]
+    },
+    "job_id": "66666666-6666-4666-8666-666666666666",
+    "schema_version": 1,
+    "source_revision": "997e543caa40a42d3966c317836c3948f11796881a6d7650e4585455ef9bf50a"
+  },
+  "missing_snapshot": {
+    "candidates": null,
+    "job_id": "66666666-6666-4666-8666-666666666666",
+    "schema_version": 1,
+    "source_revision": "997e543caa40a42d3966c317836c3948f11796881a6d7650e4585455ef9bf50a"
+  },
+  "prepared_snapshot": {
+    "candidates": {
+      "links": [
+        {
+          "evidence": [
+            {
+              "byte_end": 24,
+              "byte_start": 11,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 46,
+              "byte_start": 33,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 50,
+              "byte_start": 37,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "aａｂｃｄ"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 67,
+              "byte_start": 50,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 28,
+              "byte_start": 11,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            },
+            {
+              "byte_end": 71,
+              "byte_start": 54,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "a𝐀𝐁𝐂𝐃"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 32,
+              "byte_start": 25,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 36,
+              "byte_start": 29,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "compare"
+        }
+      ],
+      "possible_folders": [
+        {
+          "evidence": [
+            {
+              "byte_end": 24,
+              "byte_start": 11,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "name": "AＡＢＣＤ"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 28,
+              "byte_start": 11,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "name": "A𝐀𝐁𝐂𝐃"
+        }
+      ],
+      "schema_version": 1,
+      "without_suggestion": [
+        2
+      ],
+      "words": [
+        {
+          "evidence": [
+            {
+              "byte_end": 24,
+              "byte_start": 11,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 46,
+              "byte_start": 33,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 50,
+              "byte_start": 37,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "aａｂｃｄ"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 67,
+              "byte_start": 50,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 28,
+              "byte_start": 11,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            },
+            {
+              "byte_end": 71,
+              "byte_start": 54,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "a𝐀𝐁𝐂𝐃"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 32,
+              "byte_start": 25,
+              "citation": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 36,
+              "byte_start": 29,
+              "citation": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "compare"
+        }
+      ]
+    },
+    "job_id": "66666666-6666-4666-8666-666666666666",
+    "schema_version": 1,
+    "source_revision": "997e543caa40a42d3966c317836c3948f11796881a6d7650e4585455ef9bf50a"
+  },
+  "segments": [
+    {
+      "end_ms": 1000,
+      "speaker_id": null,
+      "start_ms": 0,
+      "text": "Le dossier AＡＢＣＤ compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 2000,
+      "speaker_id": null,
+      "start_ms": 1000,
+      "text": "Le dossier A𝐀𝐁𝐂𝐃 compare AＡＢＣＤ et A𝐀𝐁𝐂𝐃.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 3000,
+      "speaker_id": null,
+      "start_ms": 2000,
+      "text": "oui 🌿",
+      "translated_text": null
+    }
+  ]
+}

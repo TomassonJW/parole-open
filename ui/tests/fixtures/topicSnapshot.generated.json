@@ -1,0 +1,316 @@
+{
+  "job_id": "44444444-4444-4444-8444-444444444444",
+  "loaded_snapshot": {
+    "candidates": {
+      "links": [
+        {
+          "evidence": [
+            {
+              "byte_end": 36,
+              "byte_start": 30,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 37,
+              "byte_start": 31,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "budget"
+        }
+      ],
+      "possible_folders": [
+        {
+          "evidence": [
+            {
+              "byte_end": 19,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "name": "Étoile"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 18,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "name": "Étoile"
+        }
+      ],
+      "schema_version": 1,
+      "without_suggestion": [
+        2
+      ],
+      "words": [
+        {
+          "evidence": [
+            {
+              "byte_end": 36,
+              "byte_start": 30,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 37,
+              "byte_start": 31,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "budget"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 19,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "étoile"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 27,
+              "byte_start": 20,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "reprend"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 18,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "étoile"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 26,
+              "byte_start": 19,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "étudie"
+        }
+      ]
+    },
+    "job_id": "44444444-4444-4444-8444-444444444444",
+    "schema_version": 1,
+    "source_revision": "537ad344e511b9995260710172c67fd4978def8d2b861f12238eaf60fbb0ef25"
+  },
+  "missing_snapshot": {
+    "candidates": null,
+    "job_id": "44444444-4444-4444-8444-444444444444",
+    "schema_version": 1,
+    "source_revision": "537ad344e511b9995260710172c67fd4978def8d2b861f12238eaf60fbb0ef25"
+  },
+  "prepared_snapshot": {
+    "candidates": {
+      "links": [
+        {
+          "evidence": [
+            {
+              "byte_end": 36,
+              "byte_start": 30,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 37,
+              "byte_start": 31,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "shared_term": "budget"
+        }
+      ],
+      "possible_folders": [
+        {
+          "evidence": [
+            {
+              "byte_end": 19,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "name": "Étoile"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 18,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "name": "Étoile"
+        }
+      ],
+      "schema_version": 1,
+      "without_suggestion": [
+        2
+      ],
+      "words": [
+        {
+          "evidence": [
+            {
+              "byte_end": 36,
+              "byte_start": 30,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            },
+            {
+              "byte_end": 37,
+              "byte_start": 31,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 5000,
+          "term": "budget"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 19,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "étoile"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 27,
+              "byte_start": 20,
+              "citation": "Le dossier Étoile reprend le budget.",
+              "end_ms": 2000,
+              "segment_index": 1,
+              "start_ms": 1000
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "reprend"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 18,
+              "byte_start": 11,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "étoile"
+        },
+        {
+          "evidence": [
+            {
+              "byte_end": 26,
+              "byte_start": 19,
+              "citation": "Le dossier Étoile étudie le budget 🌟.",
+              "end_ms": 1000,
+              "segment_index": 0,
+              "start_ms": 0
+            }
+          ],
+          "lexical_weight": 10000,
+          "term": "étudie"
+        }
+      ]
+    },
+    "job_id": "44444444-4444-4444-8444-444444444444",
+    "schema_version": 1,
+    "source_revision": "537ad344e511b9995260710172c67fd4978def8d2b861f12238eaf60fbb0ef25"
+  },
+  "segments": [
+    {
+      "end_ms": 1000,
+      "speaker_id": "voix-é",
+      "start_ms": 0,
+      "text": "Le dossier Étoile étudie le budget 🌟.",
+      "translated_text": "The star budget 🌟"
+    },
+    {
+      "end_ms": 2000,
+      "speaker_id": "voix-é",
+      "start_ms": 1000,
+      "text": "Le dossier Étoile reprend le budget.",
+      "translated_text": null
+    },
+    {
+      "end_ms": 3000,
+      "speaker_id": null,
+      "start_ms": 2000,
+      "text": "oui 🌿",
+      "translated_text": null
+    }
+  ]
+}

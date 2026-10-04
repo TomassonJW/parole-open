@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "title": "Réunion fictive des dossiers Atlas, Verrière et Luciole",
+    "source_language": "fr",
+    "synthetic": true,
+    "scenario_date": "6 mai 2032",
+    "purpose": "Comparaison locale de deux modèles sur un texte entièrement fictif, sans média privé"
+  },
+  "speakers": {
+    "S1": "Ana",
+    "S2": "Malik",
+    "S3": "Élodie",
+    "S4": "Simon"
+  },
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 44000,
+      "text": "On ouvre cette réunion fictive avec quatre dossiers que je veux garder séparés : le pilote interne Atlas, le catalogue Verrière, l'atelier Luciole et les dépenses communes. Notre ordre du jour sert à clarifier des hypothèses, pas à transformer chaque suggestion en décision. Je noterai les réserves avant de parler des échéances.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 48000,
+      "end_ms": 92000,
+      "text": "Pour Atlas, l'équipe a préparé une version de démonstration. Le parcours de création fonctionne sur la machine de test, mais le contrôle des droits n'a pas encore été rejoué avec des profils différents. Une démonstration réussie ne vaut donc ni validation de sécurité ni autorisation de présenter le pilote à l'extérieur.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 96000,
+      "end_ms": 140000,
+      "text": "J'ai relevé deux écarts dans le tableau Atlas : une pièce jointe reste visible après retrait d'un accès et le journal d'activité perd parfois l'ordre des actions. Je peux reproduire les deux cas. Je ne donnerai pas mon accord qualité tant que les corrections et leur vérification n'auront pas été consignées.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 144000,
+      "end_ms": 188000,
+      "text": "Le dossier Verrière concerne uniquement le catalogue des objets de scène. Les descriptions sont prêtes à relire, mais les droits sur les illustrations restent à vérifier. Cela n'a aucun lien avec l'accès technique au pilote Atlas. Nous pouvons travailler sur les textes sans publier le catalogue ni déclarer les images utilisables.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 192000,
+      "end_ms": 236000,
+      "text": "Sur Luciole, l'atelier de lecture prévu le 11 mai 2032 figure toujours au calendrier interne. Une personne a demandé si une petite salle suffirait. Il nous manque le relevé acoustique ; cette incertitude concerne le lieu, pas l'existence de l'atelier. Ne confondons pas demande de salle et annonce d'annulation.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 240000,
+      "end_ms": 284000,
+      "text": "La proposition initiale pour Atlas était le 14 mai 2032. Je la mentionne comme option examinée, pas comme rendez-vous confirmé. Si les essais restent ouverts, il faudra revoir cette date. Pour Verrière, je n'ai proposé aucune date de publication, même si les textes de présentation avancent.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 288000,
+      "end_ms": 332000,
+      "text": "La reprise des essais Atlas demandera probablement deux journées. Je peux préparer une liste courte des scénarios à rejouer, avec une trace pour chaque anomalie. Cela ne promet pas que tout sera corrigé en deux jours : si une régression apparaît, la validation restera en attente, quel que soit le calendrier évoqué ici.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 336000,
+      "end_ms": 380000,
+      "text": "Pour Verrière, je remettrai les légendes à Élodie afin qu'elle vérifie les formulations. Il faut notamment distinguer une reproduction utilisée pour nos essais d'une illustration autorisée pour diffusion. Le fait de recevoir une légende ne fait pas de moi la personne qui signe les droits ni le responsable de leur obtention.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 384000,
+      "end_ms": 428000,
+      "text": "Passons aux dépenses. Une enveloppe de travail de vingt mille euros apparaissait dans un brouillon, mais elle n'a jamais été votée. Le chiffre utile sera celui que nous approuverons explicitement aujourd'hui. Il faut également distinguer un plafond de dépense interne d'un devis fournisseur, car les deux documents ne portent pas le même engagement.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 432000,
+      "end_ms": 476000,
+      "text": "Le fournisseur fictif a transmis un devis de vingt-neuf mille cinq cents euros pour des prestations qui dépassent le pilote. Je le soumets à discussion et non au paiement. Il contient un service d'assistance annuel dont nous n'avons pas établi le besoin. Aucune commande, aucun bon signé et aucune facture approuvée n'en découlent.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 480000,
+      "end_ms": 524000,
+      "text": "Nous pourrions isoler les frais indispensables au pilote Atlas, puis garder Verrière et Luciole hors de ce calcul. Le matériel de l'atelier n'a pas à consommer par défaut le plafond Atlas. Je vérifierai avec Malik les lignes qui ont été rangées dans la mauvaise colonne avant de produire une note révisée.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 528000,
+      "end_ms": 572000,
+      "text": "J'aimerais que la décision budgétaire dise précisément si elle permet une étude ou une dépense. Dans Verrière, nous avons seulement besoin de relire les conditions d'usage des illustrations. Il serait trompeur de présenter le devis global du fournisseur comme approuvé au motif qu'une partie de notre travail avance.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 576000,
+      "end_ms": 620000,
+      "text": "Je propose provisoirement un pilote interne Atlas le 14 mai 2032, sous réserve de la validation des droits et des essais. Je note cette décision comme provisoire, pas comme autorisation d'invitation. Malik préparerait un bref message pour l'équipe interne ; personne n'enverrait une annonce aux partenaires sans un accord distinct.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 624000,
+      "end_ms": 668000,
+      "text": "Je prends la préparation du message Atlas, avec la réserve qu'il ne parte pas tant que la date n'est pas confirmée. Pour le moment, je suis aussi chargé de consolider le tableau des anomalies. J'aurai besoin des traces d'Élodie, mais cela ne transfère pas à Élodie la responsabilité du tableau.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 672000,
+      "end_ms": 716000,
+      "text": "Je peux fournir les traces avant le 9 mai 2032 et marquer ce qui est corrigé ou seulement contourné. Sur Verrière, je peux relire les légendes, mais je ne validerai pas les droits des images. Ce sont deux tâches différentes ; le même nom sur un document ne les rend pas interchangeables.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 720000,
+      "end_ms": 764000,
+      "text": "J'ai réservé une petite salle pour Luciole sans annoncer de changement d'horaire. Si le relevé acoustique indique qu'elle convient, nous la garderons ; sinon, nous chercherons une autre salle. Le 11 mai reste la date de l'atelier et la réservation provisoire n'est pas une décision sur la conformité du lieu.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 768000,
+      "end_ms": 812000,
+      "text": "Je valide pour Atlas un plafond de vingt-quatre mille euros, sous contrôle des lignes réellement nécessaires. C'est la limite interne autorisée, non la validation automatique d'une proposition commerciale. Le devis de vingt-neuf mille cinq cents euros est refusé en l'état. Il faudra une proposition séparée si nous avons besoin d'un service additionnel.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 816000,
+      "end_ms": 860000,
+      "text": "Je reformule pour éviter toute ambiguïté : nous pouvons engager des dépenses admissibles jusqu'au plafond approuvé, selon notre circuit habituel, mais je ne signerai pas le devis refusé. Les chiffres ne s'additionnent pas. Je préparerai une liste des postes concernés, sans inscrire d'achat du module annuel.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 864000,
+      "end_ms": 908000,
+      "text": "La note budgétaire révisée partira de moi vers Ana le 10 mai 2032 au plus tard. J'y glisserai aussi une estimation des illustrations Verrière, séparée des postes Atlas, et j'exclurai Luciole. Cette remise d'une note n'est pas un paiement. Je demanderai que les lignes incertaines soient visibles au lieu de disparaître dans un total arrondi.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 912000,
+      "end_ms": 956000,
+      "text": "Sur les illustrations Verrière, la question demeure : qui vérifie l'étendue exacte des droits de reproduction ? Je peux rassembler les intitulés et les variantes des images, mais je ne peux pas répondre sur les autorisations. Aucun nom de responsable n'est arrêté pour cette vérification, et aucune publication n'est décidée.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 960000,
+      "end_ms": 1004000,
+      "text": "Pour Luciole, j'entends une rumeur selon laquelle l'atelier aurait été annulé à cause de la salle. Non : nous n'annulons pas l'atelier du 11 mai 2032. Nous attendons le relevé acoustique pour choisir la salle. Si le lieu réservé ne convient pas, nous changerons de salle sans changer automatiquement la date.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1008000,
+      "end_ms": 1052000,
+      "text": "Je m'étais mal exprimé en disant que Luciole était suspendu. C'est uniquement le choix du lieu qui reste suspendu. Je vais corriger ma note de séance. Cette correction ne concerne pas le pilote Atlas, dont la date provisoire est un autre sujet et dont les essais ne sont pas encore validés.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1056000,
+      "end_ms": 1100000,
+      "text": "Le nouveau passage des tests Atlas montre que la pièce jointe disparaît correctement pour un profil, mais reste visible pour un autre. Ce résultat partiel ne ferme pas l'anomalie. Je vais documenter la différence entre les deux profils et ajouter un cas de régression avant de prononcer quoi que ce soit sur la date.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1104000,
+      "end_ms": 1148000,
+      "text": "Les textes Verrière ont aussi besoin d'une distinction entre la notice publique et la fiche d'inventaire interne. La première doit attendre les droits ; la seconde peut être relue maintenant. Je prépare les légendes pour Élodie, mais je n'en déduis aucune approbation de publication ni de dépense supplémentaire.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1152000,
+      "end_ms": 1196000,
+      "text": "Nous arrivons à un point où la date du 14 mai pour Atlas paraît fragile. Je demande à chacun ce qui manque exactement avant de corriger la décision. Ne changeons ni le plafond ni la date de Luciole par glissement de vocabulaire. Notre prochaine phrase sur Atlas devra être explicite et limitée à Atlas.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1200000,
+      "end_ms": 1244000,
+      "text": "Il manque au moins la preuve que le retrait d'accès supprime réellement la visibilité de la pièce jointe pour tous les profils. Je ne peux pas signer la validation qualité ce soir. Même si l'autre anomalie est corrigée demain, une seule vérification incomplète suffit à bloquer le départ du pilote interne.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1248000,
+      "end_ms": 1292000,
+      "text": "J'annule la décision provisoire du pilote Atlas le 14 mai 2032. Cette date ne doit plus figurer comme date active, même avec sa réserve initiale. Le message que Malik avait préparé pour cette date reste un brouillon et ne partira pas. Je ne parle ni de l'atelier Luciole ni du catalogue Verrière.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1296000,
+      "end_ms": 1340000,
+      "text": "Je retire donc du message Atlas toute mention du 14 mai, et je n'enverrai pas la version déjà préparée. Un collègue m'a demandé si l'atelier Luciole était annulé aussi : non, comme nous venons de le préciser, sa date du 11 mai reste en place sous réserve du choix de salle.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1344000,
+      "end_ms": 1388000,
+      "text": "Pour qu'il existe une piste de travail, je suggère le 28 mai 2032 pour le pilote Atlas. Je ne prétends pas que cette nouvelle date soit validée ; il faut encore la qualité et un accord sur le calendrier. Il serait prématuré d'envoyer une invitation ou d'imprimer ce jour sur une affiche.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1392000,
+      "end_ms": 1436000,
+      "text": "Nous retenons le 28 mai 2032 uniquement comme nouvelle date conditionnelle d'Atlas : elle devra être confirmée après validation qualité et contrôle des droits d'accès. Aujourd'hui elle n'est pas validée. Si les vérifications échouent, elle sera revue. Aucun lancement public ni aucune invitation externe ne sont autorisés par cette formule.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1440000,
+      "end_ms": 1484000,
+      "text": "Je viserai le 24 mai 2032 pour remettre le résultat des essais Atlas. Cette échéance est un objectif de remise, pas une affirmation que les essais seront réussis. Je distinguerai dans le rapport ce qui a été rejoué, ce qui demeure ouvert et les captures d'essai qui n'ont qu'une valeur interne.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1488000,
+      "end_ms": 1532000,
+      "text": "Pour le tableau des anomalies Atlas, j'avais proposé de rester responsable jusqu'à la clôture. Mais la revue détaillée exige désormais quelqu'un qui tient les scénarios au quotidien. Je peux transmettre le tableau et garder la rédaction du message interne ; la propriété du suivi technique peut être rediscutée sans toucher aux autres tâches.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1536000,
+      "end_ms": 1580000,
+      "text": "Le suivi Verrière n'a pas avancé sur les droits des illustrations. J'ai préparé les légendes, mais je n'ai reçu aucune autorisation. Pour Luciole, le relevé acoustique est promis sans résultat encore disponible. Ces attentes sont indépendantes de la date conditionnelle d'Atlas et n'en deviennent pas des preuves par proximité dans le compte rendu.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1584000,
+      "end_ms": 1628000,
+      "text": "Je réattribue maintenant le tableau des anomalies Atlas : Élodie en devient responsable à la place de Malik. Malik lui transmettra la version courante le 8 mai 2032, puis conservera uniquement la rédaction du message interne, sans l'envoyer avant confirmation. Ce changement ne délègue pas à Élodie la décision finale du pilote.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1632000,
+      "end_ms": 1676000,
+      "text": "J'accepte le suivi du tableau Atlas et j'ajouterai les scénarios manquants dès réception. Je ne prends pas la signature des droits Verrière et je ne promets pas de faire partir le pilote. Le rapport de tests et la note budgétaire restent mes tâches, chacune avec sa propre échéance et son propre périmètre.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1680000,
+      "end_ms": 1724000,
+      "text": "Je remettrai le tableau à Élodie le 8 mai et je réécrirai le message interne en laissant la date conditionnelle clairement signalée. Je ne le diffuserai que si Ana confirme le calendrier après les vérifications. Ma responsabilité précédente sur le tableau est terminée dès le transfert, pas simplement partagée.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1728000,
+      "end_ms": 1772000,
+      "text": "Une autre question ouverte concerne Luciole : quelle salle choisir si le relevé acoustique écarte la petite salle ? Personne ne tranche ce soir et aucune autre salle n'est réservée. Cela n'annule pas l'atelier. Je peux comparer les options après réception du relevé, mais je n'annonce pas un résultat anticipé.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1776000,
+      "end_ms": 1820000,
+      "text": "Je rappelle les frontières : Atlas attend une validation technique et conserve seulement une date conditionnelle ; Verrière attend une vérification des droits d'illustration sans date de publication ; Luciole a un atelier maintenu avec un lieu à préciser. Le plafond de dépenses Atlas n'efface aucune de ces réserves et n'approuve aucun devis.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1824000,
+      "end_ms": 1868000,
+      "text": "Je viens de relire le brouillon du premier passage : une ligne y affirme que le 28 mai serait fixé. C'est faux ; nous avons choisi une cible conditionnelle qui peut encore changer. Je supprimerai le mot « fixé » avant toute diffusion interne. Le fait de rédiger une correction ne valide pas les essais.",
+      "speaker_id": "S2",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1872000,
+      "end_ms": 1916000,
+      "text": "Correction tardive sur un point de mon intervention budgétaire : j'avais dit que la note du 10 mai comprendrait une estimation des illustrations Verrière. Je retire cette inclusion si elle apparaît dans le brouillon ; la note ne portera que sur les postes Atlas. Le plafond approuvé de vingt-quatre mille euros reste inchangé.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1920000,
+      "end_ms": 1964000,
+      "text": "Je confirme cette correction : ni les illustrations Verrière ni la salle Luciole ne sont absorbées par le plafond Atlas. Le devis de vingt-neuf mille cinq cents euros demeure refusé. Surtout, ne présentez pas mon ancienne phrase sur le 14 mai comme une décision encore valable : son annulation est explicite et postérieure.",
+      "speaker_id": "S1",
+      "translated_text": null
+    },
+    {
+      "start_ms": 1968000,
+      "end_ms": 2012000,
+      "text": "Au sujet de Verrière, nous laissons ouverte la désignation d'une personne habilitée à vérifier les droits ; la relecture de mes légendes par Élodie ne vaut pas cette désignation. Je noterai séparément les images à examiner. Le catalogue restera interne pendant ce travail, sans date publique et sans promesse de publication.",
+      "speaker_id": "S4",
+      "translated_text": null
+    },
+    {
+      "start_ms": 2016000,
+      "end_ms": 2060000,
+      "text": "Je vérifierai que le tableau reçu de Malik comporte toujours l'anomalie sur les profils différents. Si un scénario manque, je le signalerai dans le rapport attendu le 24 mai, sans marquer les essais comme réussis. Ce contrôle n'a pas d'effet sur le maintien de l'atelier Luciole le 11 mai.",
+      "speaker_id": "S3",
+      "translated_text": null
+    },
+    {
+      "start_ms": 2064000,
+      "end_ms": 2108000,
+      "text": "Dernière lecture : le 14 mai Atlas est annulé, le 28 mai n'est qu'une cible conditionnelle non validée, et Luciole le 11 mai n'est pas annulé. Élodie reprend le tableau à Malik ; le plafond Atlas est approuvé, pas le devis. Les droits Verrière et la salle Luciole restent des questions ouvertes.",
+      "speaker_id": "S1",
+      "translated_text": null
+    }
+  ]
+}

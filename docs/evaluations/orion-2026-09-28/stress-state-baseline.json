@@ -1,0 +1,535 @@
+{
+  "version": 1,
+  "language": "fr",
+  "use_translation": false,
+  "fingerprint": "3ce8bad1c424d90f",
+  "sections": [
+    {
+      "first_segment": 0,
+      "last_segment": 5,
+      "start_ms": 0,
+      "end_ms": 60000,
+      "titre": "Orion",
+      "resume": "Marie propose un premier pilote le 10 avril, mais c'est une hypothèse de calendrier. Paul suggère trois licences supplémentaires, mais le service juridique doit confirmer les conditions. Claire vérifie les anomalies mobiles et demande un budget de douze mille euros. Paul attend l'avis du service juridique sur le contrat avec le fournisseur. Les tests mobiles ont deux anomalies bloquantes et le fournisseur a envoyé un devis de dix-huit mille euros pour un an, mais ce devis n'est pas un budget voté ni une dépense approuvée. Le contrat avec le fournisseur n'est pas signé et le service juridique n",
+      "points": [
+        "Les tests mobiles ont deux anomalies bloquantes.",
+        "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+        "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique.",
+        "Le budget déjà existant est de douze mille euros. Ce chiffre n'autorise pas une augmentation automatique."
+      ],
+      "decisions": [
+        "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+        "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique.",
+        "Le budget déjà existant est de douze mille euros. Ce chiffre n'autorise pas une augmentation automatique."
+      ],
+      "actions": [
+        {
+          "responsable": "Marie",
+          "tache": "Proposer un premier pilote",
+          "echeance": "10 avril"
+        },
+        {
+          "responsable": "Paul",
+          "tache": "Suggérer trois licences supplémentaires",
+          "echeance": "10 avril"
+        },
+        {
+          "responsable": "Claire",
+          "tache": "Vérifier les anomalies mobiles",
+          "echeance": "10 avril"
+        },
+        {
+          "responsable": "Paul",
+          "tache": "Confirmer les conditions de la commande",
+          "echeance": "10 avril"
+        }
+      ],
+      "questions": [
+        "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+        "Les tests mobiles ont deux anomalies bloquantes.",
+        "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+        "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique."
+      ]
+    },
+    {
+      "first_segment": 6,
+      "last_segment": 11,
+      "start_ms": 60000,
+      "end_ms": 120000,
+      "titre": "Réunion sur les anomalies mobiles et tests",
+      "resume": "Marie note séparément les sujets : calendrier du pilote, tests, plafond de dépense, contrat et communication. Paul et Claire discutent des dates de lancement public, recrutement, et anomalies mobiles. Marie propose un pilote interne pour le 19 avril. Claire confirme que les tests ne sont pas terminés et que les anomalies mobiles sont toujours ouvertes. Paul et Claire discutent des dates de lancement public et du recrutement. Marie et Paul discutent des anomalies mobiles et des tests. Claire et Paul discutent des anomalies mobiles et des tests. Marie et Paul discutent des anomalies mobiles et d",
+      "points": [
+        "date de lancement public n'a pas été fixée",
+        "un pilote interne n'est pas un lancement pour les clients",
+        "la possibilité de recruter un deuxième testeur est évoquée",
+        "le 19 avril pourrait convenir pour un pilote interne",
+        "les tests ne sont pas terminés",
+        "les deux anomalies mobiles sont toujours ouvertes"
+      ],
+      "decisions": [
+        "fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication"
+      ],
+      "actions": [
+        {
+          "responsable": "non précisé",
+          "tache": "piloter un test",
+          "echeance": "19 avril"
+        },
+        {
+          "responsable": "non précisé",
+          "tache": "recruter un deuxième testeur",
+          "echeance": "non précisé"
+        },
+        {
+          "responsable": "non précisé",
+          "tache": "mettre à jour le tableau des vérifications",
+          "echeance": "non précisé"
+        }
+      ],
+      "questions": [
+        "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication"
+      ]
+    },
+    {
+      "first_segment": 12,
+      "last_segment": 17,
+      "start_ms": 120000,
+      "end_ms": 180000,
+      "titre": "Réunion sur le pilote interne",
+      "resume": "Marie décide d'un pilote interne le 19 avril, Paul approuve un plafond de 18 000 €, Claire prend la note de budget révisé, et Paul prépare un message pour le client. Les tests et le contrat fournisseur sont toujours non validés et non signés respectivement.",
+      "points": [
+        "Claire préparera la note de budget révisé et l'enverra à Marie au plus tard le 12 avril",
+        "Paul devait informer le client mardi d'une date de pilote",
+        "Paul prépare un message pour le client, mais il ne l'enverra pas avant d'avoir reçu la version validée du calendrier",
+        "Les tests ne sont toujours pas validés",
+        "Le contrat fournisseur n'est toujours pas signé non plus"
+      ],
+      "decisions": [
+        "Nous décidons maintenant un pilote interne le 19 avril sous réserve d'une validation qualité préalable",
+        "Nous approuvons un plafond de seize mille euros pour le pilote",
+        "Les dix-huit mille euros du devis annuel restent refusés"
+      ],
+      "actions": [
+        {
+          "responsable": "Marie",
+          "tache": "Déterminer un pilote interne",
+          "echeance": "19 avril"
+        },
+        {
+          "responsable": "Claire",
+          "tache": "Prendre la note de budget révisé",
+          "echeance": "12 avril"
+        }
+      ],
+      "questions": [
+        "Nous approuvons un plafond de seize mille euros pour le pilote",
+        "Paul prépare un message pour le client, mais il ne l'enverra pas avant d'avoir reçu la version validée du calendrier"
+      ]
+    },
+    {
+      "first_segment": 18,
+      "last_segment": 23,
+      "start_ms": 180000,
+      "end_ms": 240000,
+      "titre": "Réunion des 19 avril",
+      "resume": "Marie annule la date du 19 avril, Paul choisit un nouveau pilote interne le 26 avril, Claire ne veut pas approuver le devis de 18 000 euros, et Claire envoyer la note de budget révisé à Marie avant le 12 avril. Paul informera uniquement l'équipe interne du nouveau calendrier avant le 13 avril, et Claire ne contactera pas le client à cette étape. Le plafond approuvé reste 16 000 euros, et le devis de 18 000 euros ne devient pas approuvé par le changement de date. Les points restés ouverts sont la rectification importante, la décision de Paul, et la décision de Claire. Les tâches restent inchang",
+      "points": [
+        "plafond approuvé reste 16 000 euros",
+        "devis de 18 000 euros ne devient pas approuvé par le changement de date"
+      ],
+      "decisions": [
+        "rectification importante : annulation de la date du 19 avril",
+        "Paul : décision de choisir un nouveau pilote interne le 26 avril",
+        "Claire : décision de ne pas approuver le devis de 18 000 euros"
+      ],
+      "actions": [
+        {
+          "responsable": "non précisé",
+          "tache": "annulation de la date du pilote",
+          "echeance": "19 avril"
+        },
+        {
+          "responsable": "Paul",
+          "tache": "choix d'un nouveau pilote interne",
+          "echeance": "26 avril"
+        },
+        {
+          "responsable": "Claire",
+          "tache": "envoi de la note de budget révisé",
+          "echeance": "12 avril"
+        }
+      ],
+      "questions": [
+        "rectification importante : annulation de la date du 19 avril",
+        "Paul : décision de choisir un nouveau pilote interne le 26 avril",
+        "Claire : décision de ne pas approuver le devis de 18 000 euros"
+      ]
+    },
+    {
+      "first_segment": 24,
+      "last_segment": 29,
+      "start_ms": 240000,
+      "end_ms": 300000,
+      "titre": "Réunion sur les tests et la sécurité du projet",
+      "resume": "Nous avons un contrat fournisseur non signé. Le recrutement d'un deuxième testeur reste ouvert. La validation des tests est attendue mais non obtenue. La date de lancement public n'est pas arrêtée et la sécurité n'est pas encore validée. Un pilote interne est envisagé le 26 avril si les tests passent, le 19 avril est annulé. Le plafond de 16 000 euros est confirmé, ainsi que la note de budget pour Marie et la non-validation des factures.",
+      "points": [],
+      "decisions": [],
+      "actions": [],
+      "questions": []
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "language": "fr",
+    "titre": "Réunion du 19 avril",
+    "synthese": "Le 19 avril, Marie propose un pilote interne, Paul approuve un plafond de 18 000 €, et Claire prend la note de budget révisé. Les tests mobiles et le contrat fournisseur sont toujours non validés et non signés respectivement. Les anomalies mobiles sont toujours ouvertes.",
+    "decisions": [
+      {
+        "texte": "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+        "start_ms": 0
+      },
+      {
+        "texte": "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique.",
+        "start_ms": 0
+      },
+      {
+        "texte": "Le budget déjà existant est de douze mille euros. Ce chiffre n'autorise pas une augmentation automatique.",
+        "start_ms": 0
+      },
+      {
+        "texte": "fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "start_ms": 60000
+      },
+      {
+        "texte": "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "start_ms": 60000
+      },
+      {
+        "texte": "Nous décidons maintenant un pilote interne le 19 avril sous réserve d'une validation qualité préalable",
+        "start_ms": 120000
+      },
+      {
+        "texte": "Nous approuvons un plafond de seize mille euros pour le pilote",
+        "start_ms": 120000
+      },
+      {
+        "texte": "Les dix-huit mille euros du devis annuel restent refusés",
+        "start_ms": 120000
+      },
+      {
+        "texte": "rectification importante : annulation de la date du 19 avril",
+        "start_ms": 180000
+      },
+      {
+        "texte": "Paul : décision de choisir un nouveau pilote interne le 26 avril",
+        "start_ms": 180000
+      },
+      {
+        "texte": "Claire : décision de ne pas approuver le devis de 18 000 euros",
+        "start_ms": 180000
+      }
+    ],
+    "actions": [
+      {
+        "responsable": "Marie",
+        "tache": "Proposer un premier pilote",
+        "echeance": "10 avril",
+        "start_ms": 0
+      },
+      {
+        "responsable": "Paul",
+        "tache": "Suggérer trois licences supplémentaires",
+        "echeance": "10 avril",
+        "start_ms": 0
+      },
+      {
+        "responsable": "Claire",
+        "tache": "Vérifier les anomalies mobiles",
+        "echeance": "10 avril",
+        "start_ms": 0
+      },
+      {
+        "responsable": "Paul",
+        "tache": "Confirmer les conditions de la commande",
+        "echeance": "10 avril",
+        "start_ms": 0
+      },
+      {
+        "responsable": "non précisé",
+        "tache": "piloter un test",
+        "echeance": "19 avril",
+        "start_ms": 60000
+      },
+      {
+        "responsable": "non précisé",
+        "tache": "recruter un deuxième testeur",
+        "echeance": "non précisé",
+        "start_ms": 60000
+      },
+      {
+        "responsable": "non précisé",
+        "tache": "mettre à jour le tableau des vérifications",
+        "echeance": "non précisé",
+        "start_ms": 60000
+      },
+      {
+        "responsable": "Marie",
+        "tache": "Déterminer un pilote interne",
+        "echeance": "19 avril",
+        "start_ms": 120000
+      },
+      {
+        "responsable": "Claire",
+        "tache": "Prendre la note de budget révisé",
+        "echeance": "12 avril",
+        "start_ms": 120000
+      },
+      {
+        "responsable": "non précisé",
+        "tache": "annulation de la date du pilote",
+        "echeance": "19 avril",
+        "start_ms": 180000
+      },
+      {
+        "responsable": "Paul",
+        "tache": "choix d'un nouveau pilote interne",
+        "echeance": "26 avril",
+        "start_ms": 180000
+      },
+      {
+        "responsable": "Claire",
+        "tache": "envoi de la note de budget révisé",
+        "echeance": "12 avril",
+        "start_ms": 180000
+      }
+    ],
+    "questions": [
+      {
+        "texte": "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+        "start_ms": 0
+      },
+      {
+        "texte": "Les tests mobiles ont deux anomalies bloquantes.",
+        "start_ms": 0
+      },
+      {
+        "texte": "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique.",
+        "start_ms": 0
+      },
+      {
+        "texte": "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+        "start_ms": 60000
+      },
+      {
+        "texte": "Nous approuvons un plafond de seize mille euros pour le pilote",
+        "start_ms": 120000
+      },
+      {
+        "texte": "Paul prépare un message pour le client, mais il ne l'enverra pas avant d'avoir reçu la version validée du calendrier",
+        "start_ms": 120000
+      },
+      {
+        "texte": "rectification importante : annulation de la date du 19 avril",
+        "start_ms": 180000
+      },
+      {
+        "texte": "Paul : décision de choisir un nouveau pilote interne le 26 avril",
+        "start_ms": 180000
+      },
+      {
+        "texte": "Claire : décision de ne pas approuver le devis de 18 000 euros",
+        "start_ms": 180000
+      }
+    ],
+    "sections": [
+      {
+        "first_segment": 0,
+        "last_segment": 5,
+        "start_ms": 0,
+        "end_ms": 60000,
+        "titre": "Orion",
+        "resume": "Marie propose un premier pilote le 10 avril, mais c'est une hypothèse de calendrier. Paul suggère trois licences supplémentaires, mais le service juridique doit confirmer les conditions. Claire vérifie les anomalies mobiles et demande un budget de douze mille euros. Paul attend l'avis du service juridique sur le contrat avec le fournisseur. Les tests mobiles ont deux anomalies bloquantes et le fournisseur a envoyé un devis de dix-huit mille euros pour un an, mais ce devis n'est pas un budget voté ni une dépense approuvée. Le contrat avec le fournisseur n'est pas signé et le service juridique n",
+        "points": [
+          "Les tests mobiles ont deux anomalies bloquantes.",
+          "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+          "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique.",
+          "Le budget déjà existant est de douze mille euros. Ce chiffre n'autorise pas une augmentation automatique."
+        ],
+        "decisions": [
+          "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+          "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique.",
+          "Le budget déjà existant est de douze mille euros. Ce chiffre n'autorise pas une augmentation automatique."
+        ],
+        "actions": [
+          {
+            "responsable": "Marie",
+            "tache": "Proposer un premier pilote",
+            "echeance": "10 avril"
+          },
+          {
+            "responsable": "Paul",
+            "tache": "Suggérer trois licences supplémentaires",
+            "echeance": "10 avril"
+          },
+          {
+            "responsable": "Claire",
+            "tache": "Vérifier les anomalies mobiles",
+            "echeance": "10 avril"
+          },
+          {
+            "responsable": "Paul",
+            "tache": "Confirmer les conditions de la commande",
+            "echeance": "10 avril"
+          }
+        ],
+        "questions": [
+          "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+          "Les tests mobiles ont deux anomalies bloquantes.",
+          "Le fournisseur a envoyé un devis de dix-huit mille euros pour un an. Ce devis n'est ni un budget voté ni une dépense approuvée.",
+          "Le contrat avec le fournisseur n'est pas signé. Nous attendons encore l'avis du service juridique."
+        ]
+      },
+      {
+        "first_segment": 6,
+        "last_segment": 11,
+        "start_ms": 60000,
+        "end_ms": 120000,
+        "titre": "Réunion sur les anomalies mobiles et tests",
+        "resume": "Marie note séparément les sujets : calendrier du pilote, tests, plafond de dépense, contrat et communication. Paul et Claire discutent des dates de lancement public, recrutement, et anomalies mobiles. Marie propose un pilote interne pour le 19 avril. Claire confirme que les tests ne sont pas terminés et que les anomalies mobiles sont toujours ouvertes. Paul et Claire discutent des dates de lancement public et du recrutement. Marie et Paul discutent des anomalies mobiles et des tests. Claire et Paul discutent des anomalies mobiles et des tests. Marie et Paul discutent des anomalies mobiles et d",
+        "points": [
+          "date de lancement public n'a pas été fixée",
+          "un pilote interne n'est pas un lancement pour les clients",
+          "la possibilité de recruter un deuxième testeur est évoquée",
+          "le 19 avril pourrait convenir pour un pilote interne",
+          "les tests ne sont pas terminés",
+          "les deux anomalies mobiles sont toujours ouvertes"
+        ],
+        "decisions": [
+          "fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "ne pas fusionner les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication"
+        ],
+        "actions": [
+          {
+            "responsable": "non précisé",
+            "tache": "piloter un test",
+            "echeance": "19 avril"
+          },
+          {
+            "responsable": "non précisé",
+            "tache": "recruter un deuxième testeur",
+            "echeance": "non précisé"
+          },
+          {
+            "responsable": "non précisé",
+            "tache": "mettre à jour le tableau des vérifications",
+            "echeance": "non précisé"
+          }
+        ],
+        "questions": [
+          "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication",
+          "pourquoi ne fusionnons pas les décisions sur calendrier du pilote, tests, plafond de dépense, contrat et communication"
+        ]
+      },
+      {
+        "first_segment": 12,
+        "last_segment": 17,
+        "start_ms": 120000,
+        "end_ms": 180000,
+        "titre": "Réunion sur le pilote interne",
+        "resume": "Marie décide d'un pilote interne le 19 avril, Paul approuve un plafond de 18 000 €, Claire prend la note de budget révisé, et Paul prépare un message pour le client. Les tests et le contrat fournisseur sont toujours non validés et non signés respectivement.",
+        "points": [
+          "Claire préparera la note de budget révisé et l'enverra à Marie au plus tard le 12 avril",
+          "Paul devait informer le client mardi d'une date de pilote",
+          "Paul prépare un message pour le client, mais il ne l'enverra pas avant d'avoir reçu la version validée du calendrier",
+          "Les tests ne sont toujours pas validés",
+          "Le contrat fournisseur n'est toujours pas signé non plus"
+        ],
+        "decisions": [
+          "Nous décidons maintenant un pilote interne le 19 avril sous réserve d'une validation qualité préalable",
+          "Nous approuvons un plafond de seize mille euros pour le pilote",
+          "Les dix-huit mille euros du devis annuel restent refusés"
+        ],
+        "actions": [
+          {
+            "responsable": "Marie",
+            "tache": "Déterminer un pilote interne",
+            "echeance": "19 avril"
+          },
+          {
+            "responsable": "Claire",
+            "tache": "Prendre la note de budget révisé",
+            "echeance": "12 avril"
+          }
+        ],
+        "questions": [
+          "Nous approuvons un plafond de seize mille euros pour le pilote",
+          "Paul prépare un message pour le client, mais il ne l'enverra pas avant d'avoir reçu la version validée du calendrier"
+        ]
+      },
+      {
+        "first_segment": 18,
+        "last_segment": 23,
+        "start_ms": 180000,
+        "end_ms": 240000,
+        "titre": "Réunion des 19 avril",
+        "resume": "Marie annule la date du 19 avril, Paul choisit un nouveau pilote interne le 26 avril, Claire ne veut pas approuver le devis de 18 000 euros, et Claire envoyer la note de budget révisé à Marie avant le 12 avril. Paul informera uniquement l'équipe interne du nouveau calendrier avant le 13 avril, et Claire ne contactera pas le client à cette étape. Le plafond approuvé reste 16 000 euros, et le devis de 18 000 euros ne devient pas approuvé par le changement de date. Les points restés ouverts sont la rectification importante, la décision de Paul, et la décision de Claire. Les tâches restent inchang",
+        "points": [
+          "plafond approuvé reste 16 000 euros",
+          "devis de 18 000 euros ne devient pas approuvé par le changement de date"
+        ],
+        "decisions": [
+          "rectification importante : annulation de la date du 19 avril",
+          "Paul : décision de choisir un nouveau pilote interne le 26 avril",
+          "Claire : décision de ne pas approuver le devis de 18 000 euros"
+        ],
+        "actions": [
+          {
+            "responsable": "non précisé",
+            "tache": "annulation de la date du pilote",
+            "echeance": "19 avril"
+          },
+          {
+            "responsable": "Paul",
+            "tache": "choix d'un nouveau pilote interne",
+            "echeance": "26 avril"
+          },
+          {
+            "responsable": "Claire",
+            "tache": "envoi de la note de budget révisé",
+            "echeance": "12 avril"
+          }
+        ],
+        "questions": [
+          "rectification importante : annulation de la date du 19 avril",
+          "Paul : décision de choisir un nouveau pilote interne le 26 avril",
+          "Claire : décision de ne pas approuver le devis de 18 000 euros"
+        ]
+      },
+      {
+        "first_segment": 24,
+        "last_segment": 29,
+        "start_ms": 240000,
+        "end_ms": 300000,
+        "titre": "Réunion sur les tests et la sécurité du projet",
+        "resume": "Nous avons un contrat fournisseur non signé. Le recrutement d'un deuxième testeur reste ouvert. La validation des tests est attendue mais non obtenue. La date de lancement public n'est pas arrêtée et la sécurité n'est pas encore validée. Un pilote interne est envisagé le 26 avril si les tests passent, le 19 avril est annulé. Le plafond de 16 000 euros est confirmé, ainsi que la note de budget pour Marie et la non-validation des factures.",
+        "points": [],
+        "decisions": [],
+        "actions": [],
+        "questions": []
+      }
+    ],
+    "avertissements": []
+  }
+}

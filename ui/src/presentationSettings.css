@@ -1,0 +1,30 @@
+.presentation { margin: 1rem 0; }
+.presentation__group { display: grid; gap: .75rem; border: 0; border-top: 1px solid var(--border, #d5d9df); margin: 1rem 0; padding: 1rem 0 0; min-width: 0; }
+.presentation__group legend { font-weight: 650; padding: 0 .3rem; }
+.presentation__group input[type="range"] { width: min(100%, 25rem); accent-color: var(--accent, #17627a); }
+.presentation__group .input { max-width: 22rem; }
+.presentation__check, .presentation__color { display: flex; align-items: center; gap: .55rem; }
+.presentation__color { flex-wrap: wrap; }
+.presentation__color-name { flex: 1 1 100%; overflow-wrap: anywhere; }
+.presentation__palette { display: flex; gap: .35rem; margin-left: 0; }
+.presentation__swatch { width: 1.75rem; height: 1.75rem; border: 2px solid var(--border, #d5d9df); border-radius: 50%; cursor: pointer; }
+.presentation__swatch:focus-visible { outline: 3px solid var(--accent, #17627a); outline-offset: 2px; }
+.presentation__color input { width: 3.5rem; height: 2.25rem; cursor: pointer; }
+.presentation__group:disabled { opacity: .6; }
+.presentation-stage__notice { padding: .8rem 1rem; margin-bottom: .75rem; border: 1px solid var(--border, #cbd5e1); border-radius: .5rem; display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+.presentation-tools { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; margin: .5rem 0 .75rem; }
+.presentation-tools > .button { min-height: 44px; }
+.results__side--presentation { position: static; }
+.results__side .presentation { margin: 0; min-width: 0; }
+.results__side .presentation .panel__head { gap: .4rem; flex-wrap: wrap; }
+.results__side .presentation .button { white-space: normal; }
+.results__side .presentation__group { gap: .5rem; margin: .65rem 0; padding: .65rem 0 0; }
+.results-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 8px 16px; flex-wrap: wrap; }
+.results-toolbar .results-tabs, .results-toolbar .presentation-tools { margin: 0; }
+@media (min-width: 701px) and (max-width: 900px) {
+  .view--wide .results { grid-template-columns: minmax(0, 1fr) 250px; gap: 12px; }
+  .view--wide .results .panel { padding: 14px; }
+  .view--wide .results .transcript-block { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .view--wide .results .transcript-block__meta { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+  .view--wide .results .transcript-block__meta .segment__listen { margin: 0; margin-left: auto; }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "active_models": [
+    {
+      "purpose": "multilingual_speech_recognition",
+      "name": "Whisper large-v3-turbo Q5_0",
+      "file": "ggml-large-v3-turbo-q5_0.bin",
+      "bytes": 574041195,
+      "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2",
+      "repository": "ggerganov/whisper.cpp",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo-q5_0.bin",
+      "upstream_license": "MIT",
+      "license_url": "https://github.com/openai/whisper/blob/main/LICENSE",
+      "download": "explicit_user_action"
+    },
+    {
+      "purpose": "speaker_segmentation",
+      "name": "Pyannote segmentation 3.0 ONNX",
+      "file": "segmentation.onnx",
+      "bytes": 5992913,
+      "sha256": "220ad67ca923bef2fa91f2390c786097bf305bceb5e261d4af67b38e938e1079",
+      "repository": "csukuangfj/sherpa-onnx-pyannote-segmentation-3-0",
+      "revision": "9403a6902bb58e3d5ae8c7e77c3422de279db2e0",
+      "url": "https://huggingface.co/csukuangfj/sherpa-onnx-pyannote-segmentation-3-0/resolve/9403a6902bb58e3d5ae8c7e77c3422de279db2e0/model.onnx",
+      "upstream_license": "MIT",
+      "download": "bundled_at_build"
+    },
+    {
+      "purpose": "speaker_embedding",
+      "name": "3D-Speaker ERes2Net VoxCeleb ONNX",
+      "file": "embedding.onnx",
+      "bytes": 26485263,
+      "sha256": "c59158379255ad66e161679cca6af8d52d51e389e3224ab7d7a7baae295c2db5",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_sv_en_voxceleb_16k.onnx",
+      "upstream_license": "Apache-2.0",
+      "license_source": "https://www.modelscope.cn/models/iic/speech_eres2net_sv_en_voxceleb_16k/summary",
+      "download": "bundled_at_build"
+    },
+    {
+      "purpose": "complete_text_translation_and_report",
+      "id": "baseline",
+      "available_for_new_jobs": true,
+      "name": "Qwen2.5-1.5B-Instruct Q4_K_M",
+      "file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "bytes": 1117320736,
+      "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "upstream_license": "Apache-2.0",
+      "download": "explicit_user_action"
+    },
+    {
+      "purpose": "report_only",
+      "id": "qwen3-4b-instruct-2507-q4_k_m",
+      "available_for_new_jobs": false,
+      "name": "Qwen3-4B-Instruct-2507 Q4_K_M — intermédiaire à évaluer",
+      "file": "Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "bytes": 2497280736,
+      "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+      "repository": "bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF",
+      "revision": "ae44f08e1392f39c0e474af10c3ff8355c8b6688",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF/resolve/ae44f08e1392f39c0e474af10c3ff8355c8b6688/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "upstream_repository": "Qwen/Qwen3-4B-Instruct-2507",
+      "upstream_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "upstream_license": "Apache-2.0",
+      "download": "explicit_user_action",
+      "note": "Quantification tierce sans fichier LICENSE séparé ; fonctionnement et performances Mac M3 non évalués."
+    }
+  ],
+  "note": "Les modèles de transcription et de langue se téléchargent sur action explicite. Les modèles de voix sont inclus dans le paquet. Le moteur local a généré une synthèse rédigée avec passages sources sur un exemple synthétique ; les filtres lexicaux ne garantissent pas sa vérité ni la qualité des traductions. Les applications installées, la longue durée et le Mac M3 restent non validés."
+}

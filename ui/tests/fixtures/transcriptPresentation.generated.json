@@ -1,0 +1,122 @@
+{
+  "job": {
+    "chunk_ms": 30000,
+    "completed_chunks": 0,
+    "duration_ms": 30000,
+    "error": null,
+    "generate_report": false,
+    "id": "fiction-01",
+    "media_name": "Fiction <réunion>.wav",
+    "phase_done": 0,
+    "phase_total": 0,
+    "report": null,
+    "report_format_version": 0,
+    "report_language": null,
+    "report_model_id": "baseline",
+    "segments": [
+      {
+        "end_ms": 1000,
+        "speaker_id": "a",
+        "start_ms": 0,
+        "text": "Bonjour",
+        "translated_text": "Hello"
+      },
+      {
+        "end_ms": 4000,
+        "speaker_id": "a",
+        "start_ms": 3000,
+        "text": " & suite",
+        "translated_text": null
+      },
+      {
+        "end_ms": 7000,
+        "speaker_id": "a",
+        "start_ms": 6001,
+        "text": "Après",
+        "translated_text": null
+      },
+      {
+        "end_ms": 8000,
+        "speaker_id": "b",
+        "start_ms": 7000,
+        "text": "Réponse",
+        "translated_text": null
+      }
+    ],
+    "source_language": "auto",
+    "source_path": null,
+    "speaker_names": {
+      "a": "Alice",
+      "b": "Bob"
+    },
+    "stage": "Transcribed",
+    "target_language": "en",
+    "timing": {
+      "active_chunk_since_ms": 0,
+      "active_since_ms": 0,
+      "chunk_audio_ms": [],
+      "chunk_ms": [],
+      "platform": "fixture",
+      "preparation_ms": 0,
+      "report_ms": 0,
+      "transcription_ms": 0,
+      "translation_ms": 0
+    },
+    "translation_issues": []
+  },
+  "preferences": {
+    "export": {
+      "content": "complete",
+      "linked": true,
+      "view": {
+        "mode": "fluid",
+        "pause_ms": 2000,
+        "show_timestamps": true
+      }
+    },
+    "schema_version": 1,
+    "screen": {
+      "mode": "fluid",
+      "pause_ms": 2000,
+      "show_timestamps": true
+    },
+    "speaker_colors": {}
+  },
+  "projection": {
+    "blocks": [
+      {
+        "end_ms": 4000,
+        "segment_indices": [
+          0,
+          1
+        ],
+        "speaker_id": "a",
+        "start_ms": 0
+      },
+      {
+        "end_ms": 7000,
+        "segment_indices": [
+          2
+        ],
+        "speaker_id": "a",
+        "start_ms": 6001
+      },
+      {
+        "end_ms": 8000,
+        "segment_indices": [
+          3
+        ],
+        "speaker_id": "b",
+        "start_ms": 7000
+      }
+    ],
+    "job_id": "fiction-01",
+    "options": {
+      "mode": "fluid",
+      "pause_ms": 2000,
+      "show_timestamps": true
+    },
+    "schema_version": 1,
+    "source_revision": "63dd4ced2ca02968fd1533858877976ca1d00c0a17592638a33f913fc20096f2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "bundle": {
+    "resources": [
+      "native/whisper-cli.exe",
+      "native/llama-completion.exe",
+      "native/ffmpeg.exe",
+      "native/ffprobe.exe",
+      "native/sherpa-onnx-c-api.dll",
+      "native/onnxruntime.dll",
+      "native/onnxruntime_providers_shared.dll",
+      "native/embedding.onnx",
+      "native/segmentation.onnx",
+      "native/README.md",
+      "native/THIRD_PARTY_LICENSES.md",
+      "native/ffmpeg-LICENSE.md",
+      "native/ffmpeg-LGPL-2.1",
+      "native/llama-MIT",
+      "native/onnxruntime-MIT",
+      "native/qwen-Apache-2.0",
+      "native/segmentation-MIT",
+      "native/sherpa-Apache-2.0",
+      "native/eres2net-Apache-2.0",
+      "native/whisper-LICENSE",
+      "native/whisper-model-MIT"
+    ]
+  }
+}

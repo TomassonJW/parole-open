@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "language": "fr",
+  "use_translation": false,
+  "fingerprint": "dd612036f31f5ec9",
+  "sections": [
+    {
+      "first_segment": 0,
+      "last_segment": 17,
+      "start_ms": 0,
+      "end_ms": 180000,
+      "titre": "point Orion",
+      "resume": "Le point Orion a été ouvert avec une proposition de calendrier pour un pilote le 10 avril, mais il n'est pas validé. Le fournisseur a envoyé un devis de dix-huit mille euros pour un an, mais ce devis n'est pas un budget voté ou approuvé. Les tests mobiles ont deux anomalies bloquantes, et le budget existant de douze mille euros ne permet pas une augmentation automatique. Le contrat avec le fournisseur n'est pas signé, et la possibilité de recruter un deuxième testeur n'a pas été prise de décision. Le 19 avril est proposé pour un pilote interne sous réserve d'une validation qualité préalable, à",
+      "points": [
+        "un calendrier du pilote",
+        "tests mobiles",
+        "un plafond de dépense",
+        "un contrat",
+        "une communication"
+      ],
+      "decisions": [
+        "un pilote interne le 19 avril sous réserve d'une validation qualité préalable",
+        "un plafond de seize mille euros pour le pilote",
+        "un contrat avec le fournisseur n'est pas signé"
+      ],
+      "actions": [
+        {
+          "responsable": "Paul",
+          "tache": "préparer un message pour le client",
+          "echeance": "19 avril"
+        },
+        {
+          "responsable": "Claire",
+          "tache": "préparer la note de budget révisé",
+          "echeance": "12 avril"
+        }
+      ],
+      "questions": [
+        "est-ce que le 19 avril pourrait convenir pour un pilote interne",
+        "est-ce que les tests mobiles sont toujours ouverts",
+        "est-ce que la possibilité de recruter un deuxième testeur est évoquée"
+      ]
+    },
+    {
+      "first_segment": 18,
+      "last_segment": 29,
+      "start_ms": 180000,
+      "end_ms": 300000,
+      "titre": "Réunion des 19 avril 2023",
+      "resume": "Les décisions concernent l'annulation de la date du 19 avril, la prévision d'un nouveau pilote interne le 26 avril, l'annulation de la tâche de prévenir le client, la validation des tests, la signature du contrat fournisseur, et la prévision d'un deuxième testeur. Les questions restent ouvertes sur la validation des tests et la prévision d'un nouveau calendrier avant le 13 avril. Le plafond de 16 000 euros et la note de budget pour Marie sont confirmées. Les points restent ouverts sur la validation des tests et la prévision d'un nouveau calendrier avant le 13 avril. Les questions restent ouvri",
+      "points": [
+        "rectification importante",
+        "validation qualité",
+        "plafond de 16 000 euros",
+        "validation des tests",
+        "annulation de la tâche de prévenir le client",
+        "recrutement d'un deuxième testeur"
+      ],
+      "decisions": [
+        "annuler la date du 19 avril",
+        "prévoir un nouveau pilote interne le 26 avril",
+        "annuler la tâche de prévenir le client",
+        "n'avoir signé le contrat fournisseur",
+        "prévoir un deuxième testeur"
+      ],
+      "actions": [
+        {
+          "responsable": "Paul",
+          "tache": "prévenir le client",
+          "echeance": "26 avril"
+        },
+        {
+          "responsable": "Paul",
+          "tache": "informer l'équipe interne du nouveau calendrier",
+          "echeance": "13 avril"
+        },
+        {
+          "responsable": "Claire",
+          "tache": "envoyer la note de budget révisée à Marie",
+          "echeance": "12 avril"
+        },
+        {
+          "responsable": "Claire",
+          "tache": "attendre la validation des tests",
+          "echeance": "24 avril"
+        },
+        {
+          "responsable": "non précisé",
+          "tache": "prévenir le client",
+          "echeance": "19 avril"
+        }
+      ],
+      "questions": [
+        "nouveau pilote interne",
+        "validation des tests",
+        "annulation de la tâche de prévenir le client",
+        "nouveau calendrier avant le 13 avril"
+      ]
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "language": "fr",
+    "titre": "Réunion des 19 avril 2023",
+    "synthese": "Le point Orion a été ouvert avec une proposition de calendrier pour un pilote le 10 avril, mais elle n'est pas validée. Le fournisseur a envoyé un devis de dix-huit mille euros pour un an, mais ce devis n'est pas un budget voté ou approuvé. Les tests mobiles ont deux anomalies bloquantes, et le budget existant de douze mille euros ne permet pas une augmentation automatique. Le contrat avec le fournisseur n'est pas signé, et la possibilité de recruter un deuxième testeur n'a pas été prise de décision. Le 19 avril est proposé pour un pilote interne sous réserve d'une validation qualité préalable, à laquelle il n'est pas encore convenu. Les questions restent ouvertes sur la validation des tests et la prévision d'un nouveau calendrier avant le 13 avril.",
+    "decisions": [
+      {
+        "texte": "un pilote interne le 19 avril sous réserve d'une validation qualité préalable",
+        "start_ms": 0
+      },
+      {
+        "texte": "un plafond de seize mille euros pour le pilote",
+        "start_ms": 0
+      },
+      {
+        "texte": "un contrat avec le fournisseur n'est pas signé",
+        "start_ms": 0
+      },
+      {
+        "texte": "annuler la date du 19 avril",
+        "start_ms": 180000
+      },
+      {
+        "texte": "prévoir un nouveau pilote interne le 26 avril",
+        "start_ms": 180000
+      },
+      {
+        "texte": "annuler la tâche de prévenir le client",
+        "start_ms": 180000
+      },
+      {
+        "texte": "n'avoir signé le contrat fournisseur",
+        "start_ms": 180000
+      },
+      {
+        "texte": "prévoir un deuxième testeur",
+        "start_ms": 180000
+      }
+    ],
+    "actions": [
+      {
+        "responsable": "Paul",
+        "tache": "préparer un message pour le client",
+        "echeance": "19 avril",
+        "start_ms": 0
+      },
+      {
+        "responsable": "Claire",
+        "tache": "préparer la note de budget révisé",
+        "echeance": "12 avril",
+        "start_ms": 0
+      },
+      {
+        "responsable": "Paul",
+        "tache": "prévenir le client",
+        "echeance": "26 avril",
+        "start_ms": 180000
+      },
+      {
+        "responsable": "Paul",
+        "tache": "informer l'équipe interne du nouveau calendrier",
+        "echeance": "13 avril",
+        "start_ms": 180000
+      },
+      {
+        "responsable": "Claire",
+        "tache": "envoyer la note de budget révisée à Marie",
+        "echeance": "12 avril",
+        "start_ms": 180000
+      },
+      {
+        "responsable": "Claire",
+        "tache": "attendre la validation des tests",
+        "echeance": "24 avril",
+        "start_ms": 180000
+      }
+    ],
+    "questions": [
+      {
+        "texte": "est-ce que le 19 avril pourrait convenir pour un pilote interne",
+        "start_ms": 0
+      },
+      {
+        "texte": "est-ce que les tests mobiles sont toujours ouverts",
+        "start_ms": 0
+      },
+      {
+        "texte": "est-ce que la possibilité de recruter un deuxième testeur est évoquée",
+        "start_ms": 0
+      },
+      {
+        "texte": "nouveau pilote interne",
+        "start_ms": 180000
+      },
+      {
+        "texte": "validation des tests",
+        "start_ms": 180000
+      },
+      {
+        "texte": "annulation de la tâche de prévenir le client",
+        "start_ms": 180000
+      },
+      {
+        "texte": "nouveau calendrier avant le 13 avril",
+        "start_ms": 180000
+      }
+    ],
+    "sections": [
+      {
+        "first_segment": 0,
+        "last_segment": 17,
+        "start_ms": 0,
+        "end_ms": 180000,
+        "titre": "point Orion",
+        "resume": "Le point Orion a été ouvert avec une proposition de calendrier pour un pilote le 10 avril, mais il n'est pas validé. Le fournisseur a envoyé un devis de dix-huit mille euros pour un an, mais ce devis n'est pas un budget voté ou approuvé. Les tests mobiles ont deux anomalies bloquantes, et le budget existant de douze mille euros ne permet pas une augmentation automatique. Le contrat avec le fournisseur n'est pas signé, et la possibilité de recruter un deuxième testeur n'a pas été prise de décision. Le 19 avril est proposé pour un pilote interne sous réserve d'une validation qualité préalable, à",
+        "points": [
+          "un calendrier du pilote",
+          "tests mobiles",
+          "un plafond de dépense",
+          "un contrat",
+          "une communication"
+        ],
+        "decisions": [
+          "un pilote interne le 19 avril sous réserve d'une validation qualité préalable",
+          "un plafond de seize mille euros pour le pilote",
+          "un contrat avec le fournisseur n'est pas signé"
+        ],
+        "actions": [
+          {
+            "responsable": "Paul",
+            "tache": "préparer un message pour le client",
+            "echeance": "19 avril"
+          },
+          {
+            "responsable": "Claire",
+            "tache": "préparer la note de budget révisé",
+            "echeance": "12 avril"
+          }
+        ],
+        "questions": [
+          "est-ce que le 19 avril pourrait convenir pour un pilote interne",
+          "est-ce que les tests mobiles sont toujours ouverts",
+          "est-ce que la possibilité de recruter un deuxième testeur est évoquée"
+        ]
+      },
+      {
+        "first_segment": 18,
+        "last_segment": 29,
+        "start_ms": 180000,
+        "end_ms": 300000,
+        "titre": "Réunion des 19 avril 2023",
+        "resume": "Les décisions concernent l'annulation de la date du 19 avril, la prévision d'un nouveau pilote interne le 26 avril, l'annulation de la tâche de prévenir le client, la validation des tests, la signature du contrat fournisseur, et la prévision d'un deuxième testeur. Les questions restent ouvertes sur la validation des tests et la prévision d'un nouveau calendrier avant le 13 avril. Le plafond de 16 000 euros et la note de budget pour Marie sont confirmées. Les points restent ouverts sur la validation des tests et la prévision d'un nouveau calendrier avant le 13 avril. Les questions restent ouvri",
+        "points": [
+          "rectification importante",
+          "validation qualité",
+          "plafond de 16 000 euros",
+          "validation des tests",
+          "annulation de la tâche de prévenir le client",
+          "recrutement d'un deuxième testeur"
+        ],
+        "decisions": [
+          "annuler la date du 19 avril",
+          "prévoir un nouveau pilote interne le 26 avril",
+          "annuler la tâche de prévenir le client",
+          "n'avoir signé le contrat fournisseur",
+          "prévoir un deuxième testeur"
+        ],
+        "actions": [
+          {
+            "responsable": "Paul",
+            "tache": "prévenir le client",
+            "echeance": "26 avril"
+          },
+          {
+            "responsable": "Paul",
+            "tache": "informer l'équipe interne du nouveau calendrier",
+            "echeance": "13 avril"
+          },
+          {
+            "responsable": "Claire",
+            "tache": "envoyer la note de budget révisée à Marie",
+            "echeance": "12 avril"
+          },
+          {
+            "responsable": "Claire",
+            "tache": "attendre la validation des tests",
+            "echeance": "24 avril"
+          },
+          {
+            "responsable": "non précisé",
+            "tache": "prévenir le client",
+            "echeance": "19 avril"
+          }
+        ],
+        "questions": [
+          "nouveau pilote interne",
+          "validation des tests",
+          "annulation de la tâche de prévenir le client",
+          "nouveau calendrier avant le 13 avril"
+        ]
+      }
+    ],
+    "avertissements": []
+  }
+}

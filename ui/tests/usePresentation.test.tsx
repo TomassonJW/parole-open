@@ -1,0 +1,147 @@
+import { act, renderHook, waitFor } from '@testing-library/react'
+import { describe, expect, it, vi } from 'vitest'
+import { usePresentation } from '../src/hooks/usePresentation'
+import { defaultPreferences, sourceRevision, type PresentationPreferences, type PresentationState } from '../src/lib/transcriptPresentation'
+import { fakeBackend, makeJob } from './fakeBackend'
+
+const defer = <T,>() => { let resolve!: (value: T) => void; return { promise: new Promise<T>(r => { resolve = r }), resolve } }
+const saved = (revision: number, preferences = defaultPreferences()): PresentationState => ({ revision, preferences, warning: null, writable: true })
+
+describe('réglages asynchrones', () => {
+  it('ne rend jamais une projection périmée après un nouveau choix', async () => {
+    const first = defer<any>()
+    const job = makeJob()
+    const revision = await sourceRevision(job)
+    const { backend } = fakeBackend({ previewPresentation: vi.fn().mockReturnValueOnce(first.promise).mockImplementation(async (_id, options) => ({ schema_version: 1, job_id: job.id, source_revision: revision, options, blocks: [] })) })
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(backend.previewPresentation).toHaveBeenCalledTimes(1))
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 500 } })))
+    await waitFor(() => expect(result.current.snapshot?.options.pause_ms).toBe(500))
+    await act(async () => first.resolve({ schema_version: 1, job_id: job.id, source_revision: revision, options: defaultPreferences().screen, blocks: [] }))
+    expect(result.current.snapshot?.options.pause_ms).toBe(500)
+  })
+  it('sérialise les écritures CAS en ne conservant que le dernier choix', async () => {
+    const first = defer<any>()
+    const job = makeJob()
+    const { backend } = fakeBackend({ savePresentation: vi.fn().mockReturnValueOnce(first.promise).mockImplementation(async (_id, preferences, expectedRevision) => ({ preferences, revision: expectedRevision + 1, warning: null, writable: true })) })
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state).not.toBeNull())
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 500 } })))
+    await waitFor(() => expect(backend.savePresentation).toHaveBeenCalledTimes(1))
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 1000 } })))
+    expect(backend.savePresentation).toHaveBeenCalledTimes(1)
+    await act(async () => first.resolve({ preferences: { ...defaultPreferences(), screen: { ...defaultPreferences().screen, pause_ms: 500 } }, revision: 1, warning: null, writable: true }))
+    await waitFor(() => expect(backend.savePresentation).toHaveBeenCalledTimes(2))
+    expect(vi.mocked(backend.savePresentation).mock.calls[1][2]).toBe(1)
+    expect(vi.mocked(backend.savePresentation).mock.calls[1][1].screen.pause_ms).toBe(1000)
+  })
+  it('écarte les retours de chargement de l’ancien document', async () => {
+    const old = defer<any>()
+    const { backend } = fakeBackend({ loadPresentation: vi.fn().mockReturnValueOnce(old.promise).mockImplementation(async () => ({ preferences: defaultPreferences(), revision: 3, warning: null, writable: true })) })
+    const first = makeJob({ id: 'ancien' })
+    const next = makeJob({ id: 'nouveau' })
+    const { result, rerender } = renderHook(({ job }) => usePresentation(backend, job), { initialProps: { job: first } })
+    rerender({ job: next })
+    await waitFor(() => expect(result.current.state?.revision).toBe(3))
+    await act(async () => old.resolve({ preferences: defaultPreferences(), revision: 99, warning: null, writable: true }))
+    expect(result.current.state?.revision).toBe(3)
+  })
+  it('rend une erreur persistante réessayable sans perdre le dernier choix', async () => {
+    const { backend } = fakeBackend({ savePresentation: vi.fn().mockRejectedValueOnce(new Error('CAS indisponible')).mockImplementation(async (_id, preferences, expectedRevision) => ({ preferences, revision: expectedRevision + 1, warning: null, writable: true })) })
+    const job = makeJob()
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state).not.toBeNull())
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 500 } })))
+    await waitFor(() => expect(result.current.error).toContain('CAS indisponible'))
+    expect(result.current.state?.revision).toBe(0)
+    act(() => result.current.retry())
+    await waitFor(() => expect(result.current.state?.revision).toBe(1))
+    expect(result.current.draft.screen.pause_ms).toBe(500)
+  })
+  it('enregistre explicitement les défauts sans couleurs de personnes', async () => {
+    const job = makeJob({ segments: [{ start_ms: 0, end_ms: 100, text: 'a', speaker_id: 'A', translated_text: null }] })
+    const { backend } = fakeBackend()
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state).not.toBeNull())
+    act(() => result.current.change(p => ({ ...p, speaker_colors: { A: '#123abc' } })))
+    await act(async () => result.current.saveDefaults())
+    expect(backend.savePresentationDefaults).toHaveBeenCalledWith(expect.objectContaining({ speaker_colors: {} }), 0)
+    expect(result.current.defaultsStatus).toContain('sans couleurs')
+  })
+  it('rejette les fausses réponses de sauvegarde sans accuser réception', async () => {
+    for (const response of [saved(0), saved(1, { ...defaultPreferences(), screen: { ...defaultPreferences().screen, pause_ms: 500 } })]) {
+      const job = makeJob()
+      const { backend } = fakeBackend({ savePresentation: vi.fn(async () => response) })
+      const { result, unmount } = renderHook(() => usePresentation(backend, job))
+      await waitFor(() => expect(result.current.state).not.toBeNull())
+      act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 3000 } })))
+      await waitFor(() => expect(result.current.error).not.toBeNull())
+      expect(result.current.state?.revision).toBe(0)
+      expect(result.current.draft.screen.pause_ms).toBe(3000)
+      unmount()
+    }
+  })
+  it('relit le dernier CAS après conflit sans perdre le brouillon et réessaie explicitement', async () => {
+    const job = makeJob()
+    const { backend } = fakeBackend({
+      loadPresentation: vi.fn().mockResolvedValueOnce(saved(0)).mockResolvedValueOnce(saved(4)),
+      savePresentation: vi.fn().mockRejectedValueOnce(new Error('Conflit de révision')).mockImplementation(async (_id, preferences, expectedRevision) => saved(expectedRevision + 1, preferences)),
+    })
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state?.revision).toBe(0))
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 3000 } })))
+    await waitFor(() => expect(result.current.state?.revision).toBe(4))
+    expect(result.current.draft.screen.pause_ms).toBe(3000)
+    expect(backend.savePresentation).toHaveBeenCalledTimes(1)
+    act(() => result.current.retry())
+    await waitFor(() => expect(result.current.state?.revision).toBe(5))
+    expect(backend.savePresentation).toHaveBeenLastCalledWith(job.id, expect.objectContaining({ screen: expect.objectContaining({ pause_ms: 3000 }) }), 4)
+  })
+  it('ne réécrit jamais un fichier devenu incompatible après conflit', async () => {
+    const job = makeJob()
+    const { backend } = fakeBackend({
+      loadPresentation: vi.fn().mockResolvedValueOnce(saved(0)).mockResolvedValueOnce({ ...saved(4), writable: false, warning: 'Schéma inconnu' }),
+      savePresentation: vi.fn().mockRejectedValueOnce(new Error('Conflit de révision')),
+    })
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state?.revision).toBe(0))
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 3000 } })))
+    await waitFor(() => expect(result.current.state?.writable).toBe(false))
+    expect(result.current.draft.screen.pause_ms).toBe(3000)
+    act(() => result.current.retry())
+    expect(backend.savePresentation).toHaveBeenCalledTimes(1)
+  })
+  it('termine le dernier choix exprimé même après démontage', async () => {
+    const first = defer<PresentationState>()
+    const job = makeJob()
+    const { backend } = fakeBackend({ savePresentation: vi.fn().mockReturnValueOnce(first.promise).mockImplementation(async (_id: string, preferences: PresentationPreferences, revision: number) => saved(revision + 1, preferences)) })
+    const { result, unmount } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state).not.toBeNull())
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 3000 } })))
+    await waitFor(() => expect(backend.savePresentation).toHaveBeenCalledTimes(1))
+    act(() => result.current.change(p => ({ ...p, screen: { ...p.screen, pause_ms: 3500 } })))
+    unmount()
+    await act(async () => first.resolve(saved(1, { ...defaultPreferences(), screen: { ...defaultPreferences().screen, pause_ms: 3000 } })))
+    await waitFor(() => expect(backend.savePresentation).toHaveBeenCalledTimes(2))
+    expect(backend.savePresentation).toHaveBeenLastCalledWith(job.id, expect.objectContaining({ screen: expect.objectContaining({ pause_ms: 3500 }) }), 1)
+  })
+  it('ne redemande pas la projection pour une couleur ou un accusé de sauvegarde', async () => {
+    const job = makeJob({ segments: [{ start_ms: 0, end_ms: 100, speaker_id: 'A', text: 'Bonjour', translated_text: null }] })
+    const { backend } = fakeBackend({ previewPresentation: vi.fn(async (id, options) => ({ schema_version: 1 as const, job_id: id, source_revision: await sourceRevision(job), options, blocks: [{ segment_indices: [0], start_ms: 0, end_ms: 100, speaker_id: 'A' }] })) })
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.snapshot).not.toBeNull())
+    act(() => result.current.change(p => ({ ...p, speaker_colors: { A: '#aabbcc' } })))
+    await waitFor(() => expect(result.current.state?.revision).toBe(1))
+    expect(backend.previewPresentation).toHaveBeenCalledTimes(1)
+  })
+  it('vérifie la révision et les préférences acquittées des défauts globaux', async () => {
+    const job = makeJob()
+    const { backend } = fakeBackend({ savePresentationDefaults: vi.fn(async () => saved(0)) })
+    const { result } = renderHook(() => usePresentation(backend, job))
+    await waitFor(() => expect(result.current.state).not.toBeNull())
+    await act(async () => { await result.current.saveDefaults() })
+    expect(result.current.defaultsStatus).toBeNull()
+    expect(result.current.defaultsError).toContain('Accusé des défauts incohérent')
+    expect(result.current.error).toBeNull()
+  })
+})

@@ -1,0 +1,22 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+coverage/
+*.tsbuildinfo
+# secrets
+.env
+.env.*
+auth.json
+*.pem
+*.key
+*.p12
+*.pfx

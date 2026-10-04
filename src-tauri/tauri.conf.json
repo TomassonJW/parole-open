@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Parole",
+  "version": "0.1.2",
+  "identifier": "app.parole.local",
+  "build": {
+    "frontendDist": "../ui/dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "pnpm --dir ui dev",
+    "beforeBuildCommand": "pnpm --dir ui build"
+  },
+  "app": {
+    "windows": [{ "title": "Parole - transcription privée", "width": 1100, "height": 760, "minWidth": 780, "minHeight": 570 }],
+    "security": { "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost; style-src 'self' 'unsafe-inline'; media-src 'self' blob:; connect-src ipc: http://ipc.localhost" }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "resources": { "native/*": "native/" },
+    "windows": {
+      "nsis": {
+        "languages": ["French"],
+        "customLanguageFiles": { "French": "installer/French.nsh" }
+      }
+    }
+  }
+}
