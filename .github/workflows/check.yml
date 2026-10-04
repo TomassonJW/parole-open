@@ -16,7 +16,6 @@ jobs:
     timeout-minutes: 25
     env:
       CARGO_BUILD_JOBS: '2'
-      TMPDIR: ${{ runner.temp }}
     steps:
       - name: Check out candidate without retained credentials
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
@@ -40,4 +39,6 @@ jobs:
       - name: Show Python version
         run: python3 --version
       - name: Run the same source checks as local contributors
+        env:
+          TMPDIR: ${{ runner.temp }}
         run: bash scripts/verify.sh
